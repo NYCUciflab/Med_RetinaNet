@@ -14,13 +14,14 @@
  - ResNeSt101
  - ResNeSt200
  - ResNeSt269
-## How to easy use IoU_v5 ###
+### How to easy use IoU_v5 ###
     from IoU_v5 import *
     ground_truth = read_json('path for ground truth .json')
     predict = read_json('path for predict .json')
-    
-#### Example for ground_truth .json
+Example for ground_truth .json
+
     {"image_name":[[xmin, ymin, xmax, ymax], [xmin, ymin, xmax, ymax]]}
-#### Example for predict .json
+Example for predict .json
+
     {"image_name":[[xmin, ymin, xmax, ymax, conf_score], [xmin, ymin, xmax, ymax, conf_score]]}
 
