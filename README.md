@@ -22,6 +22,9 @@ The network can be trained using the train.py script. Currently, two dataloaders
 For training using a custom dataset, with annotations in CSV format (see below), use
 
     python train.py --dataset csv --csv_train <path/to/train_annots.csv>  --csv_classes <path/to/train/class_list.csv>  --csv_val <path/to/val_annots.csv>
+Note that the --csv_val argument is optional, in which case no validation will be performed.
+
+### CSV datasets
 
 ### How to easy use IoU_v5 ###
     from IoU_v5 import *
